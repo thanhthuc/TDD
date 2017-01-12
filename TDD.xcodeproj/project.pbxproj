@@ -17,6 +17,8 @@
 		54476AE41E2720720072DB29 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54476AE31E2720720072DB29 /* TDDUITests.swift */; };
 		54476AF21E2721D50072DB29 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54476AF11E2721D50072DB29 /* BrainTests.swift */; };
 		54476AF61E2723800072DB29 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54476AF51E2723800072DB29 /* Brain.swift */; };
+		A2B4686B1E27E262004C8C7F /* GreetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4686A1E27E262004C8C7F /* GreetButton.swift */; };
+		A2B4686D1E27EE7C004C8C7F /* HowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4686C1E27EE7C004C8C7F /* HowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		54476AE51E2720720072DB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54476AF11E2721D50072DB29 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		54476AF51E2723800072DB29 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		A2B4686A1E27E262004C8C7F /* GreetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetButton.swift; sourceTree = "<group>"; };
+		A2B4686C1E27EE7C004C8C7F /* HowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +107,11 @@
 		54476AC21E2720720072DB29 /* TDD */ = {
 			isa = PBXGroup;
 			children = (
+				A2B468721E2800AD004C8C7F /* Model */,
+				A2B4686F1E27F8B0004C8C7F /* View */,
+				A2B4686E1E27F8A7004C8C7F /* Controller */,
+				A2B468711E27F8F9004C8C7F /* Supported File */,
 				54476AC31E2720720072DB29 /* AppDelegate.swift */,
-				54476AC51E2720720072DB29 /* ViewController.swift */,
-				54476AF51E2723800072DB29 /* Brain.swift */,
-				543B232D1E277633004F6312 /* Game.swift */,
-				54476AC71E2720720072DB29 /* Main.storyboard */,
-				54476ACA1E2720720072DB29 /* Assets.xcassets */,
-				54476ACC1E2720720072DB29 /* LaunchScreen.storyboard */,
-				54476ACF1E2720720072DB29 /* Info.plist */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -132,6 +133,43 @@
 				54476AE51E2720720072DB29 /* Info.plist */,
 			);
 			path = TDDUITests;
+			sourceTree = "<group>";
+		};
+		A2B4686E1E27F8A7004C8C7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54476AC51E2720720072DB29 /* ViewController.swift */,
+				A2B4686C1E27EE7C004C8C7F /* HowViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A2B4686F1E27F8B0004C8C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2B4686A1E27E262004C8C7F /* GreetButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A2B468711E27F8F9004C8C7F /* Supported File */ = {
+			isa = PBXGroup;
+			children = (
+				54476ACC1E2720720072DB29 /* LaunchScreen.storyboard */,
+				54476AC71E2720720072DB29 /* Main.storyboard */,
+				54476ACA1E2720720072DB29 /* Assets.xcassets */,
+				54476ACF1E2720720072DB29 /* Info.plist */,
+			);
+			name = "Supported File";
+			sourceTree = "<group>";
+		};
+		A2B468721E2800AD004C8C7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				543B232D1E277633004F6312 /* Game.swift */,
+				54476AF51E2723800072DB29 /* Brain.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +309,8 @@
 			files = (
 				54476AC61E2720720072DB29 /* ViewController.swift in Sources */,
 				54476AF61E2723800072DB29 /* Brain.swift in Sources */,
+				A2B4686D1E27EE7C004C8C7F /* HowViewController.swift in Sources */,
+				A2B4686B1E27E262004C8C7F /* GreetButton.swift in Sources */,
 				54476AC41E2720720072DB29 /* AppDelegate.swift in Sources */,
 				543B232E1E277633004F6312 /* Game.swift in Sources */,
 			);
