@@ -15,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TDD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TDD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,7 +49,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onAction1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7V7-9X-7Cl"/>
+                                            <action selector="onNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="423-Rs-5Vy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-Na-BE9" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
@@ -73,7 +73,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNu-sV-bDB"/>
+                                            <action selector="onChampagneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhU-D9-WCc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45s-6e-Fbe" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
@@ -103,7 +103,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onAction3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XU7-Ke-CFT"/>
+                                            <action selector="onLightningButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgx-0I-rIe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Pd-gMt" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
@@ -127,7 +127,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onAction4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHy-GP-PCI"/>
+                                            <action selector="onSpaceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3e-sz-f4A"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -215,6 +215,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="hqj-bz-Qhl"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="champagneButton" destination="Arn-Na-BE9" id="J1f-wt-23h"/>
+                        <outlet property="lightningButton" destination="45s-6e-Fbe" id="qo5-cC-B9q"/>
+                        <outlet property="numberButton" destination="r9C-ON-UMd" id="3rC-sx-KJP"/>
+                        <outlet property="spaceButton" destination="jYK-Pd-gMt" id="gOJ-za-pcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
