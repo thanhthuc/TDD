@@ -16,6 +16,7 @@
 		54476ACE1E2720720072DB29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54476ACC1E2720720072DB29 /* LaunchScreen.storyboard */; };
 		54476AF21E2721D50072DB29 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54476AF11E2721D50072DB29 /* BrainTests.swift */; };
 		54476AF61E2723800072DB29 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54476AF51E2723800072DB29 /* Brain.swift */; };
+		A28495D11E2C1E99003D724C /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28495D01E2C1E99003D724C /* UserDefaultExtension.swift */; };
 		A29E1E421E285060004481A9 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E1E411E285060004481A9 /* ViewControllerUnitTests.swift */; };
 		A2AC56501E2A8BDC00637DB6 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AC564F1E2A8BDC00637DB6 /* ViewControllerUITests.swift */; };
 		A2B4686B1E27E262004C8C7F /* GreetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4686A1E27E262004C8C7F /* GreetButton.swift */; };
@@ -55,6 +56,7 @@
 		54476AE51E2720720072DB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54476AF11E2721D50072DB29 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		54476AF51E2723800072DB29 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		A28495D01E2C1E99003D724C /* UserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
 		A29E1E411E285060004481A9 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		A2AC564F1E2A8BDC00637DB6 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 		A2B4686A1E27E262004C8C7F /* GreetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetButton.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				54476AC71E2720720072DB29 /* Main.storyboard */,
 				54476ACA1E2720720072DB29 /* Assets.xcassets */,
 				54476ACF1E2720720072DB29 /* Info.plist */,
+				A28495D01E2C1E99003D724C /* UserDefaultExtension.swift */,
 			);
 			name = "Supported File";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28495D11E2C1E99003D724C /* UserDefaultExtension.swift in Sources */,
 				54476AC61E2720720072DB29 /* ViewController.swift in Sources */,
 				54476AF61E2723800072DB29 /* Brain.swift in Sources */,
 				A2B4686D1E27EE7C004C8C7F /* HowViewController.swift in Sources */,

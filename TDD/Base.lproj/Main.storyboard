@@ -25,16 +25,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAz-zR-VT7">
-                                <rect key="frame" x="18" y="142" width="284" height="284"/>
+                                <rect key="frame" x="32" y="156" width="256" height="256"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9C-ON-UMd" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <color key="backgroundColor" red="0.0" green="0.76078431369999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9C-ON-UMd" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="125.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="NumberButton"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="r9C-ON-UMd" secondAttribute="height" multiplier="1:1" id="h2f-zU-k1a"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="0">
+                                        <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -42,20 +42,20 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="5"/>
+                                                <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="423-Rs-5Vy"/>
+                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69E-AN-VBP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-Na-BE9" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
-                                        <rect key="frame" x="156" y="0.5" width="128" height="128"/>
-                                        <color key="backgroundColor" red="0.0" green="0.76078431369999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="champagne">
+                                        <rect key="frame" x="130.5" y="0.5" width="125.5" height="125.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="FizzButton"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -63,23 +63,47 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="5"/>
+                                                <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onChampagneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhU-D9-WCc"/>
+                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="She-Pc-pJZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Pd-gMt" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
+                                        <rect key="frame" x="130.5" y="130.5" width="125.5" height="125.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="FizzBuzzButton"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1b9-c6-0lG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45s-6e-Fbe" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="156" width="128" height="128"/>
-                                        <color key="backgroundColor" red="0.0" green="0.76078431369999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="lightning">
+                                        <rect key="frame" x="0.0" y="130" width="125.5" height="125.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="BuzzButton"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -96,38 +120,14 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="5"/>
+                                                <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onLightningButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgx-0I-rIe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Pd-gMt" customClass="GreetButton" customModule="TDD" customModuleProvider="target">
-                                        <rect key="frame" x="156" y="156" width="128" height="128"/>
-                                        <color key="backgroundColor" red="0.0" green="0.76078431369999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="space">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="onSpaceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3e-sz-f4A"/>
+                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50J-W0-VqN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -137,7 +137,7 @@
                                     <constraint firstItem="jYK-Pd-gMt" firstAttribute="width" secondItem="jYK-Pd-gMt" secondAttribute="height" multiplier="1:1" id="4ii-ul-hhW"/>
                                     <constraint firstItem="45s-6e-Fbe" firstAttribute="width" secondItem="45s-6e-Fbe" secondAttribute="height" multiplier="1:1" id="58B-E8-aMa"/>
                                     <constraint firstItem="Arn-Na-BE9" firstAttribute="width" secondItem="Arn-Na-BE9" secondAttribute="height" multiplier="1:1" id="BfU-SG-yqA"/>
-                                    <constraint firstItem="jYK-Pd-gMt" firstAttribute="height" secondItem="gAz-zR-VT7" secondAttribute="height" multiplier="0.45" id="CsJ-EV-fgo"/>
+                                    <constraint firstItem="jYK-Pd-gMt" firstAttribute="height" secondItem="gAz-zR-VT7" secondAttribute="height" multiplier="0.49" id="CsJ-EV-fgo"/>
                                     <constraint firstAttribute="trailing" secondItem="Arn-Na-BE9" secondAttribute="trailing" id="FgQ-Mx-Ngb"/>
                                     <constraint firstItem="45s-6e-Fbe" firstAttribute="centerX" secondItem="r9C-ON-UMd" secondAttribute="centerX" id="Gdw-2x-2kI"/>
                                     <constraint firstItem="r9C-ON-UMd" firstAttribute="top" secondItem="gAz-zR-VT7" secondAttribute="top" id="IX2-Ma-ScV"/>
@@ -152,7 +152,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBu-aF-zAR">
-                                <rect key="frame" x="20" y="510" width="123" height="38"/>
+                                <rect key="frame" x="98.5" y="510" width="123" height="38"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
                                 <state key="normal" title="How to play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,24 +161,14 @@
                                     <action selector="onHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qH9-wu-3dh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-Qo-yeo">
-                                <rect key="frame" x="192" y="510" width="108" height="38"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
-                                <state key="normal" title="Play again">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNY-1C-dtQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-9a-naM">
-                                <rect key="frame" x="10" y="20" width="47.5" height="48"/>
+                                <rect key="frame" x="32" y="20" width="47.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFa-F8-rAz">
-                                <rect key="frame" x="62.5" y="22.5" width="70" height="43"/>
+                                <rect key="frame" x="84.5" y="22.5" width="70" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="EF4-62-Ebq"/>
                                 </constraints>
@@ -186,30 +176,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-oY-CUZ">
-                                <rect key="frame" x="240" y="20" width="70" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="lnd-08-N2C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.76078431372549016" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bKh-Qo-yeo" secondAttribute="trailing" constant="20" id="0bO-KS-ImA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bKh-Qo-yeo" secondAttribute="bottom" constant="20" id="8yo-Tm-2sq"/>
                             <constraint firstItem="bFa-F8-rAz" firstAttribute="leading" secondItem="vZO-9a-naM" secondAttribute="trailing" constant="5" id="Gua-1K-0dT"/>
                             <constraint firstItem="bFa-F8-rAz" firstAttribute="centerY" secondItem="vZO-9a-naM" secondAttribute="centerY" id="H1l-Lu-Vhj"/>
-                            <constraint firstItem="gAz-zR-VT7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="I9P-bQ-Thd"/>
+                            <constraint firstItem="gAz-zR-VT7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="I9P-bQ-Thd"/>
                             <constraint firstItem="gAz-zR-VT7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QYf-Ur-ZLa"/>
-                            <constraint firstAttribute="trailing" secondItem="rqb-oY-CUZ" secondAttribute="trailing" constant="10" id="WKY-Xu-jCJ"/>
-                            <constraint firstItem="vZO-9a-naM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="WzO-bN-xa1"/>
                             <constraint firstItem="gAz-zR-VT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y4o-cF-HKG"/>
+                            <constraint firstItem="vZO-9a-naM" firstAttribute="leading" secondItem="r9C-ON-UMd" secondAttribute="leading" id="Z9f-U2-bJ5"/>
+                            <constraint firstItem="KBu-aF-zAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhX-eg-ljx"/>
                             <constraint firstItem="vZO-9a-naM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hfZ-BP-VhR"/>
-                            <constraint firstItem="rqb-oY-CUZ" firstAttribute="centerY" secondItem="bFa-F8-rAz" secondAttribute="centerY" id="x21-Es-ZYQ"/>
-                            <constraint firstItem="KBu-aF-zAR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="z3p-Dx-6Cj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KBu-aF-zAR" secondAttribute="bottom" constant="20" id="zWb-hx-cl8"/>
                         </constraints>
                     </view>
@@ -217,6 +194,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="champagneButton" destination="Arn-Na-BE9" id="J1f-wt-23h"/>
+                        <outlet property="highScoreLabel" destination="vZO-9a-naM" id="rkT-e3-lta"/>
                         <outlet property="lightningButton" destination="45s-6e-Fbe" id="qo5-cC-B9q"/>
                         <outlet property="numberButton" destination="r9C-ON-UMd" id="3rC-sx-KJP"/>
                         <outlet property="spaceButton" destination="jYK-Pd-gMt" id="gOJ-za-pcg"/>
@@ -238,9 +216,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play according you like" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXe-Tv-Jye">
-                                <rect key="frame" x="24" y="236.5" width="272" height="95.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You tap to buttons to get your score, if wrong tap, minus 1, right tap, plus 1, find out rule to become the cool gamer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXe-Tv-Jye">
+                                <rect key="frame" x="24" y="177" width="273" height="215"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -271,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_border" width="400" height="400"/>
         <image name="champagne" width="49" height="50"/>
         <image name="lightning" width="29" height="50"/>
         <image name="space" width="47" height="50"/>

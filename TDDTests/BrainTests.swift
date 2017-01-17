@@ -44,7 +44,7 @@ class BrainTests: XCTestCase {
       XCTAssertEqual(result, false)
    }
    
-   func testIsDivisibleByFirten() {
+   func testIsDivisibleByFiften() {
       let result = brain.isDivisibleByFiften(number: 15)
       XCTAssertEqual(result, true)
    }
@@ -56,12 +56,13 @@ class BrainTests: XCTestCase {
    
    func testSayFizz() {
       let result = brain.check(number: 3)
-      XCTAssertEqual(result, "Fizz")
+      XCTAssertEqual(result, Move.Fizz)
    }
    
    func testSayNumber() {
       let result = brain.check(number: 1)
-      XCTAssertEqual(result, "1")
+      XCTAssertEqual(result, Move.Number)
    }
+   
    
 }

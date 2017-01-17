@@ -13,15 +13,19 @@ class Game: NSObject {
    var score: Int
    let brain: Brain
    
-   func play(nameMove: String = "Fizz") -> (right: Bool, score: Int) {
+   func play(nameMove: Move = .Fizz) -> (right: Bool, score: Int) {
       
       let result = brain.check(number: score + 1)
       
       if result == nameMove {
          score = score + 1
          return (true, score)
+      } else {
+         if score > 0 {
+            score = score - 1
+         }
+         return (false, score)
       }
-      return (false, score)
    }
    
    override init() {

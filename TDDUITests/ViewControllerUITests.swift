@@ -29,13 +29,9 @@ class ViewControllerUITests: XCTestCase {
    }
    
    func testTapNumberButtonIncrementsScore() {
-//      let app = XCUIApplication()
-//      app.buttons["1"].tap()
-//      let newScore = XCUIApplication().buttons["1"].label
-//      XCTAssertEqual(newScore, "1")
       
       let app = XCUIApplication()
-      let numberButton = app.buttons["1"]
+      let numberButton = app.buttons["NumberButton"]
       
       numberButton.tap()
       let newScore = numberButton.label
@@ -43,5 +39,42 @@ class ViewControllerUITests: XCTestCase {
       
    }
    
+   func testTapTwoTimeNumberButtonIncrementsScore() {
+      
+      let app = XCUIApplication()
+      let numberButton = app.buttons["NumberButton"]
+      
+      numberButton.tap()
+      numberButton.tap()
+      let newScore = numberButton.label
+      XCTAssertEqual(newScore, "2")
+   }
+   
+   func testTapFizzButton() {
+      let app = XCUIApplication()
+      let fizzButton = app.buttons["FizzButton"]
+      let numberButton = app.buttons["NumberButton"]
+      numberButton.tap()
+      numberButton.tap()
+      fizzButton.tap()
+      //fizzButton.tap()
+      let newScore = numberButton.label
+      XCTAssertEqual(newScore, "3")
+   }
+   
+   func testTapBuzzButton() {
+      let app = XCUIApplication()
+      let fizzButton = app.buttons["FizzButton"]
+      let buzzButton = app.buttons["BuzzButton"]
+      let numberButton = app.buttons["NumberButton"]
+      numberButton.tap()
+      numberButton.tap()
+      fizzButton.tap()
+      numberButton.tap()
+      buzzButton.tap()
+      let newScore = numberButton.label
+      XCTAssertEqual(newScore, "5")
+   }
+  
    
 }
